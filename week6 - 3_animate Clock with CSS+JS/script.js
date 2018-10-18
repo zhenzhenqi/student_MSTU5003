@@ -4,8 +4,6 @@
 //use query selector to target the minute arm of the clock, and save it in a JS variable of your choice
 
 
-
-
 //look at the following reference, and understand how to declare system JS object, Date
 //https://www.w3schools.com/jsref/jsref_obj_date.asp
 
@@ -21,7 +19,9 @@
 
 
 //for every passing second, update the second, miniute, and hour angles.
+//https://www.w3schools.com/jsref/prop_style_transform.asp
+// https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform
 
 
-//consulte with the following link, and call the update function from the step above to update every new second
+//consulte with the following links, and call the update function from the step above to update every new second
 // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval1
