@@ -6,7 +6,7 @@ var currentSlideIndex = 0;
 var slideArray = [];
 
 
-// Template for creating a custom Slide object
+// define class for creating a custom Slide object
 function Slide(title, subtitle, background, link ) {
 	this.title = title;
 	this.subtitle = subtitle;
@@ -57,7 +57,7 @@ function buildSlider(){
 		myHTML += "<div id='" + slideArray[i].id +
 		"' class='singleSlide' style='background-image:url(" + slideArray[i].background + ");'>" +
 		"<div class='slideOverlay'>" +
-		"<h1>" + slideArray[i].title + "</h1>" +
+		"<h2>" + slideArray[i].title + "</h1>" +
 		"<h4>" + slideArray[i].subtitle + "</h4>" +
 		"<a href='" + slideArray[i].link + "' target='_blank'>Open Link</a>" +
 		"</div>" +

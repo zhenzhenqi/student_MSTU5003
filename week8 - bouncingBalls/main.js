@@ -12,7 +12,6 @@ function random(min,max) {
 }
 
 // define Ball constructor
-
 function Ball(x, y, velX, velY, color, size) {
   this.x = x;
   this.y = y;
@@ -23,7 +22,6 @@ function Ball(x, y, velX, velY, color, size) {
 }
 
 // define ball draw method
-
 Ball.prototype.draw = function() {
   ctx.beginPath();
   ctx.fillStyle = this.color;
@@ -32,7 +30,6 @@ Ball.prototype.draw = function() {
 };
 
 // define ball update method
-
 Ball.prototype.update = function() {
   if((this.x + this.size) >= width) {
     this.velX = -(this.velX);

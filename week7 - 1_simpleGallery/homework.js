@@ -44,16 +44,14 @@ function displayImage(imgSrc) {
   displayedImage.setAttribute('src', imgSrc);
 }
 
+
 /* Wiring up the Darken/Lighten button */
-btn.onclick = function() {
-  var btnClass = btn.getAttribute('class');
-  if(btnClass === 'dark') {
-    btn.setAttribute('class','light');
-    btn.textContent = 'Lighten';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
-  } else {
-    btn.setAttribute('class','dark');
-    btn.textContent = 'Darken';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0)';
-  }
-}
+// 1. bind onclick html event to the button html element
+// 2. inside the onclick function, create a new variable and get btn's class attribute
+// 3. create an empty if/else structure
+// 4. set condition for if: if button's class is equal to string dark
+// 5. set response one inside the if clause: change image's background color half transparent
+// 6. set response two inside the if clause: change button value to ligten
+// 7. set response three inside the if clause: change button attribute to light
+// 8. repeat step 5, 6, 7 for response inside the else clause, with opposite result
+//tip: if need further guidance, google "js change button text" and try to click code snippet example sites like jsfiddle or stackoverflow

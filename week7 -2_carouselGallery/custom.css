@@ -1,3 +1,5 @@
+
+
 .person {
   border: 10px solid transparent;
   margin-bottom: 25px;
@@ -13,9 +15,23 @@
   background-color: black;
 }
 
+
 #bio {
   padding: 2em;
 }
+
+#bio > div:nth-child(1) > img{
+  transform: rotate(-32deg);
+}
+
+#bio > div:nth-child(2) > img{
+  transform: rotate(45deg);
+}
+
+#bio > div:nth-child(3) > img{
+  transform: rotate(180deg);
+}
+
 
 strong {
   color: pink;
@@ -33,20 +49,35 @@ body {
 
 h1 {
   font-size: 48px;
+  color: Fuchsia;
+}
+
+h2{
+  color: blue;
 }
 
 h4 {
   font-size: 24px;
+  color: Aqua;
 }
 
 a {
   margin-top: 20px;
   padding: 10px 25px;
   background-color: black;
-  color: white;
+  color: Yellow;
   /* border-radius: 0; */
   text-decoration: none;
 }
+
+p{
+  color: yellow;
+}
+
+h1, h2, h4, a, p{
+  font-family: 'Press Start 2P', cursive;
+}
+
 
 #mySlider {
   overflow: hidden;
