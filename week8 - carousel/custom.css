@@ -1,4 +1,6 @@
-
+body{
+  background: black;
+}
 
 .person {
   border: 10px solid transparent;
@@ -7,12 +9,14 @@
 }
 
 .person:hover {
-  border-color: #f1f1f1;
+  border-color: Fuchsia;
 }
 
 #intro {
-  padding: 4em;
-  background-color: black;
+  padding: 1em;
+  margin: 4em;
+  border-color: Fuchsia;
+  border-style: groove;
 }
 
 
@@ -34,7 +38,7 @@
 
 
 strong {
-  color: pink;
+  color: Fuchsia;
 }
 
 body {
@@ -48,7 +52,8 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 70px;
+  font-weight 1000;
   color: Fuchsia;
 }
 
