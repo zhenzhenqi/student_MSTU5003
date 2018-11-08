@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div class="calculator-wrap">
+        <h1 class="t-center">Calculate the number</h1>
+        <p id='number' class="t-center t-important"></p>
+        
+        <div class="btn-wrap block-center">
+            <button class='add btn'>+</button>
+            <button class='minus btn'>-</button>
+        </div>
+        <div class="btn-wrap block-center clear-wrap">
+            <button class="btn clear btn-warning">Clear Number</button>
+            <button class='btn clear-local btn-critical'>Clear Number With Local Storage</button>
+        </div>
+
+        <p class="t-center">try to refresh the browser to see whether the data would change</p>
+        <button class="btn refresh block-center">Refresh</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
