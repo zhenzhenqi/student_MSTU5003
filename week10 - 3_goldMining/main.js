@@ -89,7 +89,7 @@ Ghost.prototype.collide = function( _target) {
 
       var distance = Math.sqrt(dx * dx + dy * dy);
 
-      if (distance < this.sizeX + target.sizeX) {
+      if (distance < this.sizeX/2 + target.sizeX/2) {
         target.reset();
       }
 }
