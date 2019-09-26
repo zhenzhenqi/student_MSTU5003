@@ -6,7 +6,7 @@ body {
   font-family: 'Source Code Pro', monospace;
 
   background: linear-gradient(287deg, #ffffff, #000000);
-  background-size: 400% 400%;
+  /* background-size: 400% 400%; */
 
   -webkit-animation: BlackWhite 8s ease infinite;
   -moz-animation: BlackWhite 8s ease infinite;
@@ -185,7 +185,7 @@ a:hover {
   }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 @media (max-width: 1000px) {
     body{
       margin: 0;
@@ -194,15 +194,15 @@ a:hover {
 
 
 @media (max-width: 600px) {
+  /* Responsive layout - makes the three columns inside the flexbox stack on top of each other instead of next to each other */
   .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+
   }
 
-  #title{
-    text-align: center;
-  }
+  /* make title text align center when viewed on mobile */
 
+
+  /* make decorative image disapear */
   img{
     display: none;
   }
