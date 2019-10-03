@@ -1,5 +1,3 @@
-
-
 body {
   max-width: 1000px;
   margin: 3em auto;
@@ -190,6 +188,16 @@ a:hover {
     body{
       margin: 0;
     }
+}
+
+
+/*  it would be a nice thing to see a gif head moving around on a desktop */
+/*  but when the viewing screen width becomes narrower than 600px, id rather not see that head anymore */
+
+@media (max-width: 600px){
+  img {
+    display: none;
+  }
 }
 
 
