@@ -1,0 +1,209 @@
+
+
+body {
+  max-width: 1000px;
+  margin: 3em auto;
+  font-family: 'Source Code Pro', monospace;
+
+  background: linear-gradient(287deg, #ffffff, #000000);
+  /* background-size: 400% 400%; */
+
+  -webkit-animation: BlackWhite 8s ease infinite; moz-animation: BlackWhite 8s
+  -ease infinite; animation: BlackWhite 8s ease infinite;
+}
+
+@-webkit-keyframes BlackWhite {
+    0%{background-position:0% 61%}
+    50%{background-position:100% 40%}
+    100%{background-position:0% 61%}
+}
+@-moz-keyframes BlackWhite {
+    0%{background-position:0% 61%}
+    50%{background-position:100% 40%}
+    100%{background-position:0% 61%}
+}
+@keyframes BlackWhite {
+    0%{background-position:0% 61%}
+    50%{background-position:100% 40%}
+    100%{background-position:0% 61%}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: rgb(200, 200, 200);
+}
+
+
+a {
+  color: rgb(200, 200, 200);
+  font-size: 150%;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  padding: 20px;
+}
+
+
+/* a column class which has class side */
+.column.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.column.wide{
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+}
+
+
+.bgTransition {
+  background-image: linear-gradient(60deg, purple, blue);
+  background-repeat: no-repeat;
+  background-size: auto;
+  transition: transform 2s;
+}
+
+.bgTransition:hover {
+  background-image: linear-gradient(60deg, blue, purple);
+  transform: translate(5px, 5px);
+  z-index: 1;
+}
+
+/* Style the header */
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-size: 24px;
+}
+
+/* Container for flexboxes */
+
+
+
+/* Style the footer */
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.spin {
+  margin-right: 20px;
+  /* float: left;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -60px; */
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 1000px) {
+    body{
+      margin: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+  /* Responsive layout - makes the three columns inside the flexbox stack on top of each other instead of next to each other */
+  .row {
+    flex-direction: column;
+  }
+
+  /* make title text align center when viewed on mobile */
+
+
+  /* make decorative image disapear */
+  img{
+    display: none;
+  }
+
+}
