@@ -1,17 +1,17 @@
-
-
 body {
   max-width: 1000px;
   margin: 3em auto;
   font-family: 'Source Code Pro', monospace;
 
-  background: linear-gradient(287deg, #ffffff, #000000);
+  background-image: radial-gradient(circle, red, yellow, green);
   /* background-size: 400% 400%; */
 
   -webkit-animation: BlackWhite 8s ease infinite;
   -moz-animation: BlackWhite 8s ease infinite;
   animation: BlackWhite 8s ease infinite;
 }
+
+
 
 @-webkit-keyframes BlackWhite {
     0%{background-position:0% 61%}
@@ -30,7 +30,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: rgb(200, 200, 200);
+  color: rgb(0, 0, 0);
+  -webkit-transform: rotateZ(130deg); /* Safari prior 9.0 */
+  transform: rotateZ(130deg); /* Standard syntax */
 }
 
 
@@ -88,7 +90,7 @@ a:hover {
 
 
 .bgTransition {
-  background-image: linear-gradient(60deg, purple, blue);
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
   background-repeat: no-repeat;
   background-size: auto;
   transition: transform 2s;
