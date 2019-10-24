@@ -1,27 +1,28 @@
-//use query selector to target the hour arm of the clock, and save it in a JS variable of your choice
+const HOURHAND = document.querySelector("#hour");
+const MINUTEHAND = document.querySelector("#minute");
+const SECONDHAND = document.querySelector("#second");
 
+var date = new Date();
+console.log(date);
+let hr = date.getHours();
+let min = date.getMinutes();
+let sec = date.getSeconds();
+console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
 
-//use query selector to target the minute arm of the clock, and save it in a JS variable of your choice
+let hrPosition = (hr*360/12)+(min*(360/60)/12);
+let minPosition = (min*360/60)+(sec*(360/60)/60);
+let secPosition = sec*360/60;
 
+function runTheClock() {
 
-//look at the following reference, and understand how to declare system JS object, Date
-//https://www.w3schools.com/jsref/jsref_obj_date.asp
+    hrPosition = hrPosition+(3/360);
+    minPosition = minPosition+(6/60);
+    secPosition = secPosition+6;
 
+    HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
+    MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
+    SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
 
-//look at the following reference under object method section, and understand how to extract hourse, minutes and seconds into
-//three seperate variables, sec, min, and hr.
-//https://www.w3schools.com/jsref/jsref_obj_date.asp
+}
 
-
-
-//set up three variables, secPoistion, miPosition, and hrPosition
-//use the three variables from above, perform mathmatic calculations to change their numeric values into rotation angles.
-
-
-//for every passing second, update the second, miniute, and hour angles.
-//https://www.w3schools.com/jsref/prop_style_transform.asp
-// https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform
-
-
-//consulte with the following links, and call the update function from the step above to update every new second
-// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval1
+var interval = setInterval(runTheClock, 1000);

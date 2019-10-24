@@ -8,8 +8,6 @@ var btn = document.querySelector('button');
 var overlay = document.querySelector('.overlay');
 
 
-
-
 /* Looping through images */
   var newImage = document.createElement('img');
   newImage.setAttribute('src', xxx);
