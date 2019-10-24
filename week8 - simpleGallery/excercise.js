@@ -1,48 +1,19 @@
+// 0. use console.log to check the file has been successfully linked to html
+//open your terminal to verify it's successfully printed
 console.log("hello");
 
-document.onclick=function(e){
-  console.log(e.clientX);
-};
-
-
-
-var displayedImage = document.querySelector('.displayed-img');
-//1.1:
-//console.log(displayedImage);
-//1.2:
-//google html element img
-//1.3:
-//console.log("img property: "+displayedImage.src);
-
+//1. use query selector to target various elements
 var thumbBar = document.querySelector('.thumb-bar');
 var btn = document.querySelector('button');
 var overlay = document.querySelector('.overlay');
 
 
+
+
 /* Looping through images */
-for(var i = 1; i <= 5; i++) {
   var newImage = document.createElement('img');
-  newImage.setAttribute('src', 'images/pic' + i + '.jpg');
+  newImage.setAttribute('src', xxx);
   thumbBar.appendChild(newImage);
-
-  newImage.onclick = function(e) {
-    //2.1
-    //console.log("e :"+e);
-    //2.2
-    //google html event object
-    //2.3
-    //console.log("e.timestamp :"+e.timeStamp);
-    //2.3
-    //console.log(e.target);
-
-    var imgSrc = e.target.getAttribute('src');
-    displayImage(imgSrc);
-  }
-}
-
-function displayImage(imgSrc) {
-  displayedImage.setAttribute('src', imgSrc);
-}
 
 
 /* Wiring up the Darken/Lighten button */

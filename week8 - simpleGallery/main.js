@@ -19,7 +19,7 @@ var btn = document.querySelector('button');
 var overlay = document.querySelector('.overlay');
 
 
-/* Looping through images */
+/* Looping through 5 images */
 for(var i = 1; i <= 5; i++) {
   var newImage = document.createElement('img');
   newImage.setAttribute('src', 'images/pic' + i + '.jpg');
